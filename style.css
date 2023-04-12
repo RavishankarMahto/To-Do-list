@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: boarder-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-image: linear-gradient(to right,hsl(215, 58%, 19%), #bd2e2e);
+    color: whitesmoke;
+}
+
+
+.container{
+     border:1px solid rgb(15, 13, 13);
+    width: 100%;
+    margin: auto;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.nav h2{
+    font-size: 3rem;
+}
+
+.user-input{
+     /* border:2px solid rgba(24, 20, 20, 0.092); */
+    width: 600px;
+    text-align: center;
+}
+
+.user-input input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid rgb(57, 32, 65);
+    border-top-Left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.user-input input:focus{
+    box-shadow: 0 0 5px #7c2743;
+    border: 1px solid #86334e;
+}
+
+.user input button{
+    cursor: pointer;
+    padding: 10px;
+    width: fit-content;
+    transition: 5s;
+    outline: none;
+    background-color: rgb(165, 158, 158);
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover{
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+}
+
+.to-do-items{
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 20px;
+    color: #1f1325;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px #e22865;
+    border: 1px solid #e22865;
+}
+
+.item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media(max-width:x768px){
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2{
+        margin:10px 0;
+    }
+
+    .user-input{
+        width: 100%;
+    }
+
+    .to-do-items{
+        width: 100%;
+    }
+}
+
+@media(max-width: 320px){
+    .user-input input {
+        width: 60%;
+    }
+}
+
+
